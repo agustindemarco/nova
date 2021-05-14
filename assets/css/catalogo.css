@@ -1,0 +1,54 @@
+main .carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .carrito p {
+  font-size: 50px;
+}
+main .carrito a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .carrito a img {
+  width: 30px;
+}
+main .carrito a p {
+  padding: 2px;
+  font-size: 25px;
+}
+main .catalogo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .catalogo-box .product {
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid black;
+}
+main .catalogo-box .product img {
+  width: 150px;
+}
+main .catalogo-box .product p {
+  font-size: 25px;
+}
