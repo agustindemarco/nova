@@ -19,7 +19,7 @@ function agregar(a) {
     suma = suma + productos[a].price;
   }
   console.table(carrito);
-  console.log('Zapatos en el carrito:',carrito.length);
+  console.log("Zapatos en el carrito:", carrito.length);
   document.getElementById("count").innerHTML = `${count} Items`;
   document.getElementById("total").innerHTML = `Total: $${suma} pesos`;
   document.getElementById("vaciar").classList.remove("hidden");
@@ -29,7 +29,7 @@ function vaciar() {
   carrito = [];
   count = 0;
   suma = 0;
-  console.log('Zapatos en el carrito:',carrito.length);
+  console.log("Zapatos en el carrito:", carrito.length);
   document.getElementById("count").innerHTML = `Vacío`;
   document.getElementById("total").innerHTML = ``;
   document.getElementById("vaciar").classList.add("hidden");
