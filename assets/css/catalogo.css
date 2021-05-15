@@ -7,11 +7,14 @@ main .carrito {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .carrito p {
-  font-size: 50px;
+  font-size: 35px;
 }
-main .carrito a {
+main .carrito .cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,12 +24,24 @@ main .carrito a {
       -ms-flex-align: center;
           align-items: center;
 }
-main .carrito a img {
-  width: 30px;
+main .carrito .cart .hidden {
+  display: none;
 }
-main .carrito a p {
-  padding: 2px;
-  font-size: 25px;
+main .carrito .cart button {
+  margin-right: 10px;
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+}
+main .carrito .cart button:hover {
+  background-color: #6d6d6d;
+}
+main .carrito .cart img {
+  width: 35px;
+}
+main .carrito .cart p {
+  margin: 5px;
+  font-size: 20px;
 }
 main .catalogo-box {
   display: -webkit-box;
@@ -42,13 +57,40 @@ main .catalogo-box {
           align-items: center;
 }
 main .catalogo-box .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px;
   padding: 15px;
-  border: 1px solid black;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border: 2px solid #000000;
+}
+main .catalogo-box .product input {
+  margin: 5px;
+  width: 30px;
 }
 main .catalogo-box .product img {
+  margin: 5px;
+  height: 125px;
   width: 150px;
 }
 main .catalogo-box .product p {
   font-size: 25px;
+}
+main .catalogo-box .product button {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+}
+main .catalogo-box .product button:hover {
+  background-color: #6d6d6d;
 }
