@@ -10,16 +10,21 @@ let count = 0;
 let suma = 0;
 let carrito = [];
 
+function priceModule() {
+  for (let i = 0; i < productos.length; i++) {
+    document.getElementById(
+      "price" + i
+    ).innerHTML = `Precio: $${productos[i].price}`;
+  }
+}
+
 function agregar(a) {
-  console.clear();
   let b = Number(document.getElementById("cant" + a).value);
   for (let i = 0; i < b; i++) {
     carrito.push(productos[a]);
     count++;
-    suma = suma + productos[a].price;
+    suma += productos[a].price;
   }
-  console.table(carrito);
-  console.log("Zapatos en el carrito:", carrito.length);
   document.getElementById("count").innerHTML = `${count} Items`;
   document.getElementById("total").innerHTML = `Total: $${suma} pesos`;
   document.getElementById("vaciar").classList.remove("hidden");
@@ -29,7 +34,6 @@ function vaciar() {
   carrito = [];
   count = 0;
   suma = 0;
-  console.log("Zapatos en el carrito:", carrito.length);
   document.getElementById("count").innerHTML = `Vacío`;
   document.getElementById("total").innerHTML = ``;
   document.getElementById("vaciar").classList.add("hidden");

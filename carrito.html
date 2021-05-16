@@ -15,7 +15,7 @@
     <!-- GITHUB PAGES -->
     <title>Zapatos Nova</title>
   </head>
-  <body>
+  <body onload="priceModule()">
     <header class="navbar">
       <a href="index.html">
         <img src="img/Logo.jpg" alt="LOGO" />
@@ -60,7 +60,7 @@
             >Cantidad
             <input type="number" id="cant0" name="cant" min="0" value="1" />
           </label>
-
+          <p id="price0"></p>
           <button onclick="agregar(0)">AGREGAR AL CARRITO</button>
         </article>
 
@@ -71,6 +71,7 @@
             >Cantidad
             <input type="number" id="cant1" name="cant" min="0" value="1" />
           </label>
+          <p id="price1"></p>
           <button onclick="agregar(1)">AGREGAR AL CARRITO</button>
         </article>
 
@@ -81,6 +82,7 @@
             >Cantidad
             <input type="number" id="cant2" name="cant" min="0" value="1" />
           </label>
+          <p id="price2"></p>
           <button onclick="agregar(2)">AGREGAR AL CARRITO</button>
         </article>
 
@@ -91,6 +93,7 @@
             >Cantidad
             <input type="number" id="cant3" name="cant" min="0" value="1" />
           </label>
+          <p id="price3"></p>
           <button onclick="agregar(3)">AGREGAR AL CARRITO</button>
         </article>
 
@@ -101,6 +104,7 @@
             >Cantidad
             <input type="number" id="cant4" name="cant" min="0" value="1" />
           </label>
+          <p id="price4"></p>
           <button onclick="agregar(4)">AGREGAR AL CARRITO</button>
         </article>
 
@@ -111,6 +115,7 @@
             >Cantidad
             <input type="number" id="cant5" name="cant" min="0" value="1" />
           </label>
+          <p id="price5"></p>
           <button onclick="agregar(5)">AGREGAR AL CARRITO</button>
         </article>
       </seccion>
@@ -138,7 +143,4 @@
       </div>
     </footer>
   </body>
-  <script>
-    console.clear();
-  </script>
 </html>
